@@ -14,7 +14,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
+    @IBAction func helloButton(_ sender: Any) {
+        welcomeLabel.text = "Hello World!"
+    }
+    
+    @IBAction func clearButton(_ sender: Any) {
+        welcomeLabel.text = ""
+    }
 }
 
